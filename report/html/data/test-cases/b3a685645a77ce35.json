@@ -1,0 +1,60 @@
+{
+  "uid" : "b3a685645a77ce35",
+  "name" : "TestDeviceGuide.test_click_rename_device_tab",
+  "fullName" : "scripts.test_device_guide.TestDeviceGuide.test_click_rename_device_tab",
+  "historyId" : "fc8f1279477a5521e131dfbe0ac15870",
+  "time" : {
+    "start" : 1599399418858,
+    "stop" : 1599399441383,
+    "duration" : 22525
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "PC202009061813"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "13896-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "scripts.test_device_guide"
+  }, {
+    "name" : "testClass",
+    "value" : "scripts.test_device_guide"
+  }, {
+    "name" : "testMethod",
+    "value" : "TestDeviceGuide.test_click_rename_device_tab"
+  }, {
+    "name" : "package",
+    "value" : "scripts.test_device_guide"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b3a685645a77ce35.json",
+  "parameterValues" : [ ]
+}

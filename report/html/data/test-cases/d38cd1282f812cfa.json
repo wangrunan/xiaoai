@@ -1,0 +1,62 @@
+{
+  "uid" : "d38cd1282f812cfa",
+  "name" : "TestDeviceGuide.test_click_add_device_tab",
+  "fullName" : "scripts.test_device_guide.TestDeviceGuide.test_click_add_device_tab",
+  "historyId" : "41f3b541095f4d36967c885c69a92fcf",
+  "time" : {
+    "start" : 1599399245193,
+    "stop" : 1599399346987,
+    "duration" : 101794
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "statusMessage" : "TimeoutException: Message: \n",
+  "statusTrace" : "self = <scripts.test_device_guide.TestDeviceGuide object at 0x0000018307C32E10>\n\n    def test_click_add_device_tab(self):\n        #     首页点击个人中心按钮\n        self.page.homepage.click_center_button()\n        # 个人中心页点击设备指南\n        self.page.centerpage.click_device_guide_tab()\n        # 设备指南页点击如何添加设备tab\n>       self.page.deviceguidepage.click_add_device_tab()\n\nscripts\\test_device_guide.py:24: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npage\\deviceguidepage.py:53: in click_add_device_tab\n    self.click(self.add_device_tab)\nbase\\base_action.py:21: in click\n    self.find_element6(feature).click()\nbase\\base_action.py:17: in find_element6\n    return WebDriverWait(self.driver, timeout, poll).until(lambda x:x.find_element(by, value))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"63b4d070-e559-4aa1-8c4a-a620360cfcdf\")>\nmethod = <function BaseAction.find_element6.<locals>.<lambda> at 0x0000018307C2B048>, message = ''\n\n    def until(self, method, message=''):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n            return value is not False.\"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.time() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, 'screen', None)\n                stacktrace = getattr(exc, 'stacktrace', None)\n            time.sleep(self._poll)\n            if time.time() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\nd:\\python36\\lib\\site-packages\\selenium\\webdriver\\support\\wait.py:80: TimeoutException",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "PC202009061813"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "13896-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "scripts.test_device_guide"
+  }, {
+    "name" : "testClass",
+    "value" : "scripts.test_device_guide"
+  }, {
+    "name" : "testMethod",
+    "value" : "TestDeviceGuide.test_click_add_device_tab"
+  }, {
+    "name" : "package",
+    "value" : "scripts.test_device_guide"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d38cd1282f812cfa.json",
+  "parameterValues" : [ ]
+}

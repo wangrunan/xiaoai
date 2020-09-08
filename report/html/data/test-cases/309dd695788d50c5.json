@@ -1,0 +1,62 @@
+{
+  "uid" : "309dd695788d50c5",
+  "name" : "TestSelfCenter.test_click_my_train_2",
+  "fullName" : "scripts.test_self_center.TestSelfCenter.test_click_my_train_2",
+  "historyId" : "40a5b1bed8f8e26be167bcff7eed2d11",
+  "time" : {
+    "start" : 1599405277399,
+    "stop" : 1599405361004,
+    "duration" : 83605
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "statusMessage" : "TimeoutException: Message: \n",
+  "statusTrace" : "self = <scripts.test_self_center.TestSelfCenter object at 0x0000018307CEE630>\n\n    def test_click_my_train_2(self):\n        # 首页点击个人中心按钮\n        self.page.homepage.click_center_button()\n        # 判断是否登录\n        if self.page.centerpage.if_login():  # 登录：False,未登录：True\n            # 如果未登录，点击我的训练\n            self.page.centerpage.click_my_train()\n            # 点击好的\n            self.page.centerpage.click_ok_button()\n            # 登录\n            self.page.loginpage.input_user(\"15527619642\")\n            self.page.loginpage.input_password(\"t1005033132\")\n            self.page.loginpage.click_login_button()\n            time.sleep(3)\n            # 点击点击我的训练\n            self.page.centerpage.click_my_train()\n            time.sleep(3)\n            #断言\n>           assert self.page.mytrainpage.get_text(self.page.mytrainpage.tittle) == \"我的训练\"\n\nscripts\\test_self_center.py:72: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nbase\\base_action.py:27: in get_text\n    return self.find_element6(feature).text\nbase\\base_action.py:17: in find_element6\n    return WebDriverWait(self.driver, timeout, poll).until(lambda x:x.find_element(by, value))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"46bb0084-070c-4bf8-b6bc-1faaad3e8086\")>\nmethod = <function BaseAction.find_element6.<locals>.<lambda> at 0x0000018307CB4D90>, message = ''\n\n    def until(self, method, message=''):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n            return value is not False.\"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.time() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, 'screen', None)\n                stacktrace = getattr(exc, 'stacktrace', None)\n            time.sleep(self._poll)\n            if time.time() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\nd:\\python36\\lib\\site-packages\\selenium\\webdriver\\support\\wait.py:80: TimeoutException",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "PC202009061813"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "13896-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "scripts.test_self_center"
+  }, {
+    "name" : "testClass",
+    "value" : "scripts.test_self_center"
+  }, {
+    "name" : "testMethod",
+    "value" : "TestSelfCenter.test_click_my_train_2"
+  }, {
+    "name" : "package",
+    "value" : "scripts.test_self_center"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "309dd695788d50c5.json",
+  "parameterValues" : [ ]
+}

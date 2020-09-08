@@ -1,0 +1,62 @@
+{
+  "uid" : "ad29a0ef0da3af6a",
+  "name" : "TestMyTrain.test_click_addtrain06",
+  "fullName" : "scripts.test_my_train.TestMyTrain.test_click_addtrain06",
+  "historyId" : "7bffd30020988fa0b1d27f326de2c6d1",
+  "time" : {
+    "start" : 1599402794716,
+    "stop" : 1599403244156,
+    "duration" : 449440
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "statusMessage" : "AttributeError: 'NoneType' object has no attribute 'click'",
+  "statusTrace" : "self = <scripts.test_my_train.TestMyTrain object at 0x0000018307DE70B8>\n\n    def test_click_addtrain06(self):\n        # 首页点击个人中心按钮\n        self.page.homepage.click_center_button()\n        # 点击我的训练\n        self.page.centerpage.click_my_train()\n        # 点击我的训练-添加训练的按钮\n        self.page.mytrainpage.click_add_training_button()\n    \n        # 点击设备控制\n>       self.page.addtrainpage.click_equipmentcontrol()\n\nscripts\\test_my_train.py:199: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <page.addtrainpage.AddTrainPage object at 0x00000183079E0978>\n\n    def click_equipmentcontrol(self):\n>       self.find_element_with_scroll(self.equipmentcontrol).click()\nE       AttributeError: 'NoneType' object has no attribute 'click'\n\npage\\addtrainpage.py:78: AttributeError",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "PC202009061813"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "13896-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "scripts.test_my_train"
+  }, {
+    "name" : "testClass",
+    "value" : "scripts.test_my_train"
+  }, {
+    "name" : "testMethod",
+    "value" : "TestMyTrain.test_click_addtrain06"
+  }, {
+    "name" : "package",
+    "value" : "scripts.test_my_train"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ad29a0ef0da3af6a.json",
+  "parameterValues" : [ ]
+}

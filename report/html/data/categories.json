@@ -1,0 +1,77 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "TimeoutException: Message: \n",
+      "children" : [ {
+        "name" : "TestHomePage.test_today_hot_spots",
+        "uid" : "449a5e4f93cd9d74",
+        "parentUid" : "c7921bd1d96bb0c1cc7bf067141c7988",
+        "status" : "failed",
+        "time" : {
+          "start" : 1599400166916,
+          "stop" : 1599400323882,
+          "duration" : 156966
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TestMyTrain.test_click_addtrain07",
+        "uid" : "e9bc9e58ba1c34f5",
+        "parentUid" : "c7921bd1d96bb0c1cc7bf067141c7988",
+        "status" : "failed",
+        "time" : {
+          "start" : 1599403248900,
+          "stop" : 1599403453537,
+          "duration" : 204637
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TestPersonInformation.test_child_info1",
+        "uid" : "8186aa342041f78c",
+        "parentUid" : "c7921bd1d96bb0c1cc7bf067141c7988",
+        "status" : "failed",
+        "time" : {
+          "start" : 1599404692034,
+          "stop" : 1599404876435,
+          "duration" : 184401
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c7921bd1d96bb0c1cc7bf067141c7988"
+    }, {
+      "name" : "AttributeError: 'NoneType' object has no attribute 'click'",
+      "children" : [ {
+        "name" : "TestMyTrain.test_click_addtrain08",
+        "uid" : "abc000bcf757a74a",
+        "parentUid" : "22b35b99b257d57ea6874626f3b20c48",
+        "status" : "failed",
+        "time" : {
+          "start" : 1599403457567,
+          "stop" : 1599404203782,
+          "duration" : 746215
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TestSelfCenter.test_click_privacy_policy_tab",
+        "uid" : "e4973b73bacad165",
+        "parentUid" : "22b35b99b257d57ea6874626f3b20c48",
+        "status" : "failed",
+        "time" : {
+          "start" : 1599405754796,
+          "stop" : 1599406010415,
+          "duration" : 255619
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "22b35b99b257d57ea6874626f3b20c48"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

@@ -1,0 +1,114 @@
+{
+  "total" : 14,
+  "items" : [ {
+    "uid" : "c41cc376df69c70f9d120b48795b18d6",
+    "name" : "scripts.test_my_train",
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 7,
+      "unknown" : 0,
+      "total" : 9
+    }
+  }, {
+    "uid" : "d8235223fcdc2feba16d680b6adec653",
+    "name" : "scripts.test_self_center",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 15,
+      "unknown" : 0,
+      "total" : 16
+    }
+  }, {
+    "uid" : "f58f8ba3a440648f43e871f53996e1d3",
+    "name" : "scripts.test_homepage",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 13,
+      "unknown" : 0,
+      "total" : 14
+    }
+  }, {
+    "uid" : "9db812cdad79c210920d7434f710f13b",
+    "name" : "scripts.test_person_infomation",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 10,
+      "unknown" : 0,
+      "total" : 11
+    }
+  }, {
+    "uid" : "436a12f8fa2e8d1971e765e88cfb5365",
+    "name" : "scripts.test_like_dislike",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 16,
+      "unknown" : 0,
+      "total" : 16
+    }
+  }, {
+    "uid" : "c72b856dbb5c545f86788fd15a2fdb82",
+    "name" : "scripts.test_my_device",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 10,
+      "unknown" : 0,
+      "total" : 10
+    }
+  }, {
+    "uid" : "1b274e7981f6835cf7d2fc6069639a60",
+    "name" : "scripts.test_login",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 8,
+      "unknown" : 0,
+      "total" : 8
+    }
+  }, {
+    "uid" : "4138c6756d62a4c1e51051b0d1822fdc",
+    "name" : "scripts.test_dialoguetranslation",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 7,
+      "unknown" : 0,
+      "total" : 7
+    }
+  }, {
+    "uid" : "85058334428109f8cb22f4eb72213fa6",
+    "name" : "scripts.test_device_guide",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 6,
+      "unknown" : 0,
+      "total" : 6
+    }
+  }, {
+    "uid" : "aaec112568a67a0beb4dfeeb8c52cdb3",
+    "name" : "scripts.test_suggest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 5,
+      "unknown" : 0,
+      "total" : 5
+    }
+  } ]
+}

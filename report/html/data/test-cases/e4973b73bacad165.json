@@ -1,0 +1,66 @@
+{
+  "uid" : "e4973b73bacad165",
+  "name" : "TestSelfCenter.test_click_privacy_policy_tab",
+  "fullName" : "scripts.test_self_center.TestSelfCenter.test_click_privacy_policy_tab",
+  "historyId" : "e193cad172f38eb72e08f74ca7f95b59",
+  "time" : {
+    "start" : 1599405754796,
+    "stop" : 1599406010415,
+    "duration" : 255619
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "AttributeError: 'NoneType' object has no attribute 'click'",
+  "statusTrace" : "self = <scripts.test_self_center.TestSelfCenter object at 0x0000018307C79B00>\n\n    def test_click_privacy_policy_tab(self):\n        # 首页点击个人中心按钮\n        self.page.homepage.click_center_button()\n        # 点击\"用户协议和隐私政策\"tab\n>       self.page.centerpage.click_privacy_policy_tab()\n\nscripts\\test_self_center.py:221: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <page.centerpage.CenterPage object at 0x0000018307CFEB00>\n\n    def click_privacy_policy_tab(self):\n>       self.find_element_with_scroll(self.privacy_policy_tab).click()\nE       AttributeError: 'NoneType' object has no attribute 'click'\n\npage\\centerpage.py:137: AttributeError",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "PC202009061813"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "13896-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "scripts.test_self_center"
+  }, {
+    "name" : "testClass",
+    "value" : "scripts.test_self_center"
+  }, {
+    "name" : "testMethod",
+    "value" : "TestSelfCenter.test_click_privacy_policy_tab"
+  }, {
+    "name" : "package",
+    "value" : "scripts.test_self_center"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "e4973b73bacad165.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,60 @@
+{
+  "uid" : "2698a8a2f6ce2054",
+  "name" : "TestLogin.test_login_01[123--\\u5bc6\\u7801\\u4e0d\\u80fd\\u4e3a\\u7a7a]",
+  "fullName" : "scripts.test_login.TestLogin.test_login_01[123--\\u5bc6\\u7801\\u4e0d\\u80fd\\u4e3a\\u7a7a]",
+  "historyId" : "96988e1a228876a7ee8a23bb8fb889e6",
+  "time" : {
+    "start" : 1599401154334,
+    "stop" : 1599401175804,
+    "duration" : 21470
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "PC202009061813"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "13896-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "scripts.test_login"
+  }, {
+    "name" : "testClass",
+    "value" : "scripts.test_login"
+  }, {
+    "name" : "testMethod",
+    "value" : "TestLogin.test_login_01[123--\\u5bc6\\u7801\\u4e0d\\u80fd\\u4e3a\\u7a7a]"
+  }, {
+    "name" : "package",
+    "value" : "scripts.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2698a8a2f6ce2054.json",
+  "parameterValues" : [ ]
+}

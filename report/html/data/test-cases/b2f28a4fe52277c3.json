@@ -1,0 +1,60 @@
+{
+  "uid" : "b2f28a4fe52277c3",
+  "name" : "Testxiaoailabory.test_click_Littlelovefloatingball_tab",
+  "fullName" : "scripts.test_xiaoailabory.Testxiaoailabory.test_click_Littlelovefloatingball_tab",
+  "historyId" : "534845166ec88313663960c16dfd746e",
+  "time" : {
+    "start" : 1599406440306,
+    "stop" : 1599406463964,
+    "duration" : 23658
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "PC202009061813"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "13896-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "scripts.test_xiaoailabory"
+  }, {
+    "name" : "testClass",
+    "value" : "scripts.test_xiaoailabory"
+  }, {
+    "name" : "testMethod",
+    "value" : "Testxiaoailabory.test_click_Littlelovefloatingball_tab"
+  }, {
+    "name" : "package",
+    "value" : "scripts.test_xiaoailabory"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b2f28a4fe52277c3.json",
+  "parameterValues" : [ ]
+}

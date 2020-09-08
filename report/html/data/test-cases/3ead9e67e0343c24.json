@@ -1,0 +1,60 @@
+{
+  "uid" : "3ead9e67e0343c24",
+  "name" : "Testxiaoailabory.test_click_Voicesettings_tab",
+  "fullName" : "scripts.test_xiaoailabory.Testxiaoailabory.test_click_Voicesettings_tab",
+  "historyId" : "4daf070d83f4efdf2aa27cd4af1063a2",
+  "time" : {
+    "start" : 1599406407657,
+    "stop" : 1599406436421,
+    "duration" : 28764
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "PC202009061813"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "13896-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "scripts.test_xiaoailabory"
+  }, {
+    "name" : "testClass",
+    "value" : "scripts.test_xiaoailabory"
+  }, {
+    "name" : "testMethod",
+    "value" : "Testxiaoailabory.test_click_Voicesettings_tab"
+  }, {
+    "name" : "package",
+    "value" : "scripts.test_xiaoailabory"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3ead9e67e0343c24.json",
+  "parameterValues" : [ ]
+}

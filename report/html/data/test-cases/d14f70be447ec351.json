@@ -1,0 +1,60 @@
+{
+  "uid" : "d14f70be447ec351",
+  "name" : "TestPersonInformation.test_music_preference1",
+  "fullName" : "scripts.test_person_infomation.TestPersonInformation.test_music_preference1",
+  "historyId" : "a140d9adc5ee6b4977ed88d6293adf89",
+  "time" : {
+    "start" : 1599405056129,
+    "stop" : 1599405101384,
+    "duration" : 45255
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "PC202009061813"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "13896-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "scripts.test_person_infomation"
+  }, {
+    "name" : "testClass",
+    "value" : "scripts.test_person_infomation"
+  }, {
+    "name" : "testMethod",
+    "value" : "TestPersonInformation.test_music_preference1"
+  }, {
+    "name" : "package",
+    "value" : "scripts.test_person_infomation"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d14f70be447ec351.json",
+  "parameterValues" : [ ]
+}

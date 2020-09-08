@@ -1,0 +1,62 @@
+{
+  "uid" : "2f7a8ab6b10a57bb",
+  "name" : "TestPersonInformation.test_click_address_tab",
+  "fullName" : "scripts.test_person_infomation.TestPersonInformation.test_click_address_tab",
+  "historyId" : "b0c1d11c97780a85c450c1e01c844cff",
+  "time" : {
+    "start" : 1599404409518,
+    "stop" : 1599404469285,
+    "duration" : 59767
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "statusMessage" : "AssertionError: assert 'com.xiaomi.b...ialogActivity' == '.widgets.web.WebActivity'\n  - com.xiaomi.bluetooth.scandialog.LiteScanDialogActivity\n  + .widgets.web.WebActivity",
+  "statusTrace" : "self = <scripts.test_person_infomation.TestPersonInformation object at 0x0000018307D647F0>\n\n    def test_click_address_tab(self):\n        # 首页点击个人中心按钮\n        self.page.homepage.click_center_button()\n        if self.page.centerpage.if_login():  #登录：False,未登录：True\n            # 未登陆，登录账号\n            self.page.centerpage.click_login_tab()\n            self.page.loginpage.input_user(\"15527619642\")\n            self.page.loginpage.input_password(\"t1005033132\")\n            self.page.loginpage.click_login_button()\n            time.sleep(3)\n            # 个人中心页点击登录tab\n            self.page.centerpage.click_login_tab()\n            # 点击常用地址tab\n            self.page.personaldatapage.click_address_tab()\n            time.sleep(3)\n            # 断言\n            assert self.driver.current_activity == \".widgets.web.WebActivity\"\n            return\n        # 已登录\n        self.page.centerpage.click_login_tab()\n        self.page.personaldatapage.click_address_tab()\n        time.sleep(3)\n        # 断言\n>       assert self.driver.current_activity == \".widgets.web.WebActivity\"\nE       AssertionError: assert 'com.xiaomi.b...ialogActivity' == '.widgets.web.WebActivity'\nE         - com.xiaomi.bluetooth.scandialog.LiteScanDialogActivity\nE         + .widgets.web.WebActivity\n\nscripts\\test_person_infomation.py:67: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "PC202009061813"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "13896-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "scripts.test_person_infomation"
+  }, {
+    "name" : "testClass",
+    "value" : "scripts.test_person_infomation"
+  }, {
+    "name" : "testMethod",
+    "value" : "TestPersonInformation.test_click_address_tab"
+  }, {
+    "name" : "package",
+    "value" : "scripts.test_person_infomation"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2f7a8ab6b10a57bb.json",
+  "parameterValues" : [ ]
+}
