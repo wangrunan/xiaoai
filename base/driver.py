@@ -5,7 +5,7 @@ from appium import webdriver
 def get_driver(no_reset = True):
     desired_caps = dict()
     desired_caps['platformName'] = 'Android'
-    desired_caps['platformVersion'] = '10'
+    #desired_caps['platformVersion'] = '10'
     desired_caps['deviceName'] = 'E6EDU20521033136'
     # toast
     desired_caps['automationName'] = 'Uiautomator2'

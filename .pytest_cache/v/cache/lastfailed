@@ -1,6 +1,9 @@
 {
+  "scripts/test1_domain.py": true,
   "scripts/test_homepage.py::TestHomePage::()::test_today_hot_spots": true,
   "scripts/test_my_train.py::TestMyTrain::()::test_click_addtrain07": true,
   "scripts/test_my_train.py::TestMyTrain::()::test_click_addtrain08": true,
-  "scripts/test_self_center.py::TestSelfCenter::()::test_click_privacy_policy_tab": true
+  "scripts/test_self_center.py::TestSelfCenter::()::test_click_privacy_policy_tab": true,
+  "scripts/test_short_cut.py": true,
+  "scripts/test_translate.py": true
 }
