@@ -1,0 +1,60 @@
+{
+  "uid" : "e881e97c831fd8e1",
+  "name" : "TestDomain.test_weather_08",
+  "fullName" : "scripts.test1_domain.TestDomain.test_weather_08",
+  "historyId" : "1a63a38287dcb86e4454f7f8dab0dc38",
+  "time" : {
+    "start" : 1599963329581,
+    "stop" : 1599963356737,
+    "duration" : 27156
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-IJRQON0"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "13864-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "scripts.test1_domain"
+  }, {
+    "name" : "testClass",
+    "value" : "scripts.test1_domain"
+  }, {
+    "name" : "testMethod",
+    "value" : "TestDomain.test_weather_08"
+  }, {
+    "name" : "package",
+    "value" : "scripts.test1_domain"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e881e97c831fd8e1.json",
+  "parameterValues" : [ ]
+}

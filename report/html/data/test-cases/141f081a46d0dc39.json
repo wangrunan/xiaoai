@@ -1,0 +1,60 @@
+{
+  "uid" : "141f081a46d0dc39",
+  "name" : "TestDomain.test_class_03",
+  "fullName" : "scripts.test1_domain.TestDomain.test_class_03",
+  "historyId" : "918ad2f0246afd509a3685d5824809ad",
+  "time" : {
+    "start" : 1599962983381,
+    "stop" : 1599963012538,
+    "duration" : 29157
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-IJRQON0"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "13864-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "scripts.test1_domain"
+  }, {
+    "name" : "testClass",
+    "value" : "scripts.test1_domain"
+  }, {
+    "name" : "testMethod",
+    "value" : "TestDomain.test_class_03"
+  }, {
+    "name" : "package",
+    "value" : "scripts.test1_domain"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "141f081a46d0dc39.json",
+  "parameterValues" : [ ]
+}

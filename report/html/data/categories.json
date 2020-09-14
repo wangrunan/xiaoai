@@ -4,73 +4,97 @@
   "children" : [ {
     "name" : "Product defects",
     "children" : [ {
+      "name" : "AssertionError: assert '晚上' in '现在是早上了呢，么么哒！'\n +  where '现在是早上了呢，么么哒！' = <bound method BaseAction.get_text of <page.sessionpage.SessionPage object at 0x04490EB0>>(('xpath', \"//*[@resource-id='com.xiaomi.xiaoailite:id/tv_toast_view']\"))\n +    where <bound method BaseAction.get_text of <page.sessionpage.SessionPage object at 0x04490EB0>> = <page.sessionpage.SessionPage object at 0x04490EB0>.get_text\n +      where <page.sessionpage.SessionPage object at 0x04490EB0> = <page.page.Page object at 0x04490C50>.sessionpage\n +        where <page.page.Page object at 0x04490C50> = <scripts.test1_domain.TestDomain object at 0x04490AB0>.page\n +    and   ('xpath', \"//*[@resource-id='com.xiaomi.xiaoailite:id/tv_toast_view']\") = <page.sessionpage.SessionPage object at 0x04490070>.tts_reply\n +      where <page.sessionpage.SessionPage object at 0x04490070> = <page.page.Page object at 0x04490C50>.sessionpage\n +        where <page.page.Page object at 0x04490C50> = <scripts.test1_domain.TestDomain object at 0x04490AB0>.page",
+      "children" : [ {
+        "name" : "TestDomain.test_scence_02",
+        "uid" : "2636abbffb46a660",
+        "parentUid" : "39d4a56293ff694afa465c07266f2f2e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1599963664006,
+          "stop" : 1599963774814,
+          "duration" : 110808
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "39d4a56293ff694afa465c07266f2f2e"
+    }, {
+      "name" : "AssertionError: assert '一天' in '早上好！哈哈，周末啦！今天是9月13日，周日，农历庚子年七月二十六。武汉洪山今天晴转小雨，现在阴，晚上11点有小雨，记得带伞20度到27度，和昨天差不多，空气质量指数51，空气还可以'\n +  where '早上好！哈哈，周末啦！今天是9月13日，周日，农历庚子年七月二十六。武汉洪山今天晴转小雨，现在阴，晚上11点有小雨，记得带伞20度到27度，和昨天差不多，空气质量指数51，空气还可以' = <bound method BaseAction.get_text of <page.sessionpage.SessionPage object at 0x04356410>>(('xpath', \"//*[@resource-id='com.xiaomi.xiaoailite:id/tv_toast_view']\"))\n +    where <bound method BaseAction.get_text of <page.sessionpage.SessionPage object at 0x04356410>> = <page.sessionpage.SessionPage object at 0x04356410>.get_text\n +      where <page.sessionpage.SessionPage object at 0x04356410> = <page.page.Page object at 0x04356690>.sessionpage\n +        where <page.page.Page object at 0x04356690> = <scripts.test1_domain.TestDomain object at 0x04356670>.page\n +    and   ('xpath', \"//*[@resource-id='com.xiaomi.xiaoailite:id/tv_toast_view']\") = <page.sessionpage.SessionPage object at 0x043566D0>.tts_reply\n +      where <page.sessionpage.SessionPage object at 0x043566D0> = <page.page.Page object at 0x04356690>.sessionpage\n +        where <page.page.Page object at 0x04356690> = <scripts.test1_domain.TestDomain object at 0x04356670>.page",
+      "children" : [ {
+        "name" : "TestDomain.test_scence_04",
+        "uid" : "e51cd1fad7542f1",
+        "parentUid" : "0612c8dbdac5c43e3016f09502b24a2c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1599963808283,
+          "stop" : 1599963922974,
+          "duration" : 114691
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0612c8dbdac5c43e3016f09502b24a2c"
+    }, {
+      "name" : "AssertionError: assert '工程师' in '我的家人有个伟大的名字，叫科技工作者，又名程序员'\n +  where '我的家人有个伟大的名字，叫科技工作者，又名程序员' = <bound method BaseAction.get_text of <page.sessionpage.SessionPage object at 0x01017470>>(('xpath', \"//*[@resource-id='com.xiaomi.xiaoailite:id/tv_toast_view']\"))\n +    where <bound method BaseAction.get_text of <page.sessionpage.SessionPage object at 0x01017470>> = <page.sessionpage.SessionPage object at 0x01017470>.get_text\n +      where <page.sessionpage.SessionPage object at 0x01017470> = <page.page.Page object at 0x01017D10>.sessionpage\n +        where <page.page.Page object at 0x01017D10> = <scripts.test1_domain.TestDomain object at 0x01017CF0>.page\n +    and   ('xpath', \"//*[@resource-id='com.xiaomi.xiaoailite:id/tv_toast_view']\") = <page.sessionpage.SessionPage object at 0x01017130>.tts_reply\n +      where <page.sessionpage.SessionPage object at 0x01017130> = <page.page.Page object at 0x01017D10>.sessionpage\n +        where <page.page.Page object at 0x01017D10> = <scripts.test1_domain.TestDomain object at 0x01017CF0>.page",
+      "children" : [ {
+        "name" : "TestDomain.test_chatt_01",
+        "uid" : "fdd14a6436e635cb",
+        "parentUid" : "6bf6b2248ed3ce5b1435e10d01a85cc8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1599966428271,
+          "stop" : 1599966541895,
+          "duration" : 113624
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6bf6b2248ed3ce5b1435e10d01a85cc8"
+    }, {
       "name" : "TimeoutException: Message: \n",
       "children" : [ {
-        "name" : "TestHomePage.test_today_hot_spots",
-        "uid" : "449a5e4f93cd9d74",
+        "name" : "TestDomain.test_chatt_02",
+        "uid" : "d96a528361bd5d0",
         "parentUid" : "c7921bd1d96bb0c1cc7bf067141c7988",
         "status" : "failed",
         "time" : {
-          "start" : 1599400166916,
-          "stop" : 1599400323882,
-          "duration" : 156966
+          "start" : 1599966545318,
+          "stop" : 1599966702450,
+          "duration" : 157132
         },
         "flaky" : false,
         "parameters" : [ ]
       }, {
-        "name" : "TestMyTrain.test_click_addtrain07",
-        "uid" : "e9bc9e58ba1c34f5",
+        "name" : "TestDomain.test_chatt_03",
+        "uid" : "7f0b97da5d07eb7a",
         "parentUid" : "c7921bd1d96bb0c1cc7bf067141c7988",
         "status" : "failed",
         "time" : {
-          "start" : 1599403248900,
-          "stop" : 1599403453537,
-          "duration" : 204637
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "TestPersonInformation.test_child_info1",
-        "uid" : "8186aa342041f78c",
-        "parentUid" : "c7921bd1d96bb0c1cc7bf067141c7988",
-        "status" : "failed",
-        "time" : {
-          "start" : 1599404692034,
-          "stop" : 1599404876435,
-          "duration" : 184401
+          "start" : 1599966705832,
+          "stop" : 1599966859805,
+          "duration" : 153973
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
       "uid" : "c7921bd1d96bb0c1cc7bf067141c7988"
     }, {
-      "name" : "AttributeError: 'NoneType' object has no attribute 'click'",
+      "name" : "AssertionError: assert '单曲循环' in '好呀，我也喜欢这首歌哦'\n +  where '好呀，我也喜欢这首歌哦' = <bound method BaseAction.get_text of <page.sessionpage.SessionPage object at 0x00FAFD90>>(('xpath', \"//*[@resource-id='com.xiaomi.xiaoailite:id/tv_toast_view']\"))\n +    where <bound method BaseAction.get_text of <page.sessionpage.SessionPage object at 0x00FAFD90>> = <page.sessionpage.SessionPage object at 0x00FAFD90>.get_text\n +      where <page.sessionpage.SessionPage object at 0x00FAFD90> = <page.page.Page object at 0x00FAF970>.sessionpage\n +        where <page.page.Page object at 0x00FAF970> = <scripts.test1_domain.TestDomain object at 0x00FAF830>.page\n +    and   ('xpath', \"//*[@resource-id='com.xiaomi.xiaoailite:id/tv_toast_view']\") = <page.sessionpage.SessionPage object at 0x00FAFC70>.tts_reply\n +      where <page.sessionpage.SessionPage object at 0x00FAFC70> = <page.page.Page object at 0x00FAF970>.sessionpage\n +        where <page.page.Page object at 0x00FAF970> = <scripts.test1_domain.TestDomain object at 0x00FAF830>.page",
       "children" : [ {
-        "name" : "TestMyTrain.test_click_addtrain08",
-        "uid" : "abc000bcf757a74a",
-        "parentUid" : "22b35b99b257d57ea6874626f3b20c48",
+        "name" : "TestDomain.test_music_08",
+        "uid" : "3b131e392a29066c",
+        "parentUid" : "8192060b4d45d44015b388b01b330fc3",
         "status" : "failed",
         "time" : {
-          "start" : 1599403457567,
-          "stop" : 1599404203782,
-          "duration" : 746215
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "TestSelfCenter.test_click_privacy_policy_tab",
-        "uid" : "e4973b73bacad165",
-        "parentUid" : "22b35b99b257d57ea6874626f3b20c48",
-        "status" : "failed",
-        "time" : {
-          "start" : 1599405754796,
-          "stop" : 1599406010415,
-          "duration" : 255619
+          "start" : 1599967786404,
+          "stop" : 1599967906638,
+          "duration" : 120234
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "22b35b99b257d57ea6874626f3b20c48"
+      "uid" : "8192060b4d45d44015b388b01b330fc3"
     } ],
     "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
   } ]

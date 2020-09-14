@@ -1,0 +1,66 @@
+{
+  "uid" : "2636abbffb46a660",
+  "name" : "TestDomain.test_scence_02",
+  "fullName" : "scripts.test1_domain.TestDomain.test_scence_02",
+  "historyId" : "d9fc033ec14bca64fff9c53794006c3",
+  "time" : {
+    "start" : 1599963664006,
+    "stop" : 1599963774814,
+    "duration" : 110808
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert '晚上' in '现在是早上了呢，么么哒！'\n +  where '现在是早上了呢，么么哒！' = <bound method BaseAction.get_text of <page.sessionpage.SessionPage object at 0x04490EB0>>(('xpath', \"//*[@resource-id='com.xiaomi.xiaoailite:id/tv_toast_view']\"))\n +    where <bound method BaseAction.get_text of <page.sessionpage.SessionPage object at 0x04490EB0>> = <page.sessionpage.SessionPage object at 0x04490EB0>.get_text\n +      where <page.sessionpage.SessionPage object at 0x04490EB0> = <page.page.Page object at 0x04490C50>.sessionpage\n +        where <page.page.Page object at 0x04490C50> = <scripts.test1_domain.TestDomain object at 0x04490AB0>.page\n +    and   ('xpath', \"//*[@resource-id='com.xiaomi.xiaoailite:id/tv_toast_view']\") = <page.sessionpage.SessionPage object at 0x04490070>.tts_reply\n +      where <page.sessionpage.SessionPage object at 0x04490070> = <page.page.Page object at 0x04490C50>.sessionpage\n +        where <page.page.Page object at 0x04490C50> = <scripts.test1_domain.TestDomain object at 0x04490AB0>.page",
+  "statusTrace" : "self = <scripts.test1_domain.TestDomain object at 0x04490AB0>\n\n    def test_scence_02(self):\n        time.sleep(3)\n        # 首页点击键盘\n        self.page.homepage.click_keyboard()\n        # 对话页输入“晚上好”\n        self.page.sessionpage.input_keyboard_input(\"晚上好\")\n        # 对话页点击发送\n        self.page.sessionpage.click_send_button()\n        # 断言\n>       assert \"晚上\" in self.page.sessionpage.get_text(self.page.sessionpage.tts_reply)\nE       assert '晚上' in '现在是早上了呢，么么哒！'\nE        +  where '现在是早上了呢，么么哒！' = <bound method BaseAction.get_text of <page.sessionpage.SessionPage object at 0x04490EB0>>(('xpath', \"//*[@resource-id='com.xiaomi.xiaoailite:id/tv_toast_view']\"))\nE        +    where <bound method BaseAction.get_text of <page.sessionpage.SessionPage object at 0x04490EB0>> = <page.sessionpage.SessionPage object at 0x04490EB0>.get_text\nE        +      where <page.sessionpage.SessionPage object at 0x04490EB0> = <page.page.Page object at 0x04490C50>.sessionpage\nE        +        where <page.page.Page object at 0x04490C50> = <scripts.test1_domain.TestDomain object at 0x04490AB0>.page\nE        +    and   ('xpath', \"//*[@resource-id='com.xiaomi.xiaoailite:id/tv_toast_view']\") = <page.sessionpage.SessionPage object at 0x04490070>.tts_reply\nE        +      where <page.sessionpage.SessionPage object at 0x04490070> = <page.page.Page object at 0x04490C50>.sessionpage\nE        +        where <page.page.Page object at 0x04490C50> = <scripts.test1_domain.TestDomain object at 0x04490AB0>.page\n\nscripts\\test1_domain.py:439: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-IJRQON0"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "13864-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "scripts.test1_domain"
+  }, {
+    "name" : "testClass",
+    "value" : "scripts.test1_domain"
+  }, {
+    "name" : "testMethod",
+    "value" : "TestDomain.test_scence_02"
+  }, {
+    "name" : "package",
+    "value" : "scripts.test1_domain"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "2636abbffb46a660.json",
+  "parameterValues" : [ ]
+}

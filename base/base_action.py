@@ -16,12 +16,21 @@ class BaseAction:
         value = tuple[1]
         return WebDriverWait(self.driver, timeout, poll).until(lambda x:x.find_element(by, value))
 
+    # 查找多元素方法
+    def find_elements(self, feature, timeout=10, poll=1.0):
+        by = feature[0]
+        value = feature[1]
+
+        return WebDriverWait(self.driver, timeout, poll).until(lambda x: x.find_elements(by, value))
 
     def click(self, feature):
         self.find_element6(feature).click()
 
     def input(self, feature, text):
         self.find_element6(feature).send_keys(text)
+    # 清空方法
+    def clear_test(self,feature):
+        self.find_element6(feature).clear()
 
     def get_text(self, feature):
         return self.find_element6(feature).text
@@ -105,11 +114,6 @@ class BaseAction:
         action = TouchAction(self.driver)
         element = self.find_element6(message, 5, 0.1)
         action.press(el=element).wait(3000).release().perform()
-
-
-
-
-
 
 
 

@@ -1,0 +1,66 @@
+{
+  "uid" : "fdd14a6436e635cb",
+  "name" : "TestDomain.test_chatt_01",
+  "fullName" : "scripts.test1_domain.TestDomain.test_chatt_01",
+  "historyId" : "41ef9dc634d5a3fdadc1aefbb5901ccf",
+  "time" : {
+    "start" : 1599966428271,
+    "stop" : 1599966541895,
+    "duration" : 113624
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert '工程师' in '我的家人有个伟大的名字，叫科技工作者，又名程序员'\n +  where '我的家人有个伟大的名字，叫科技工作者，又名程序员' = <bound method BaseAction.get_text of <page.sessionpage.SessionPage object at 0x01017470>>(('xpath', \"//*[@resource-id='com.xiaomi.xiaoailite:id/tv_toast_view']\"))\n +    where <bound method BaseAction.get_text of <page.sessionpage.SessionPage object at 0x01017470>> = <page.sessionpage.SessionPage object at 0x01017470>.get_text\n +      where <page.sessionpage.SessionPage object at 0x01017470> = <page.page.Page object at 0x01017D10>.sessionpage\n +        where <page.page.Page object at 0x01017D10> = <scripts.test1_domain.TestDomain object at 0x01017CF0>.page\n +    and   ('xpath', \"//*[@resource-id='com.xiaomi.xiaoailite:id/tv_toast_view']\") = <page.sessionpage.SessionPage object at 0x01017130>.tts_reply\n +      where <page.sessionpage.SessionPage object at 0x01017130> = <page.page.Page object at 0x01017D10>.sessionpage\n +        where <page.page.Page object at 0x01017D10> = <scripts.test1_domain.TestDomain object at 0x01017CF0>.page",
+  "statusTrace" : "self = <scripts.test1_domain.TestDomain object at 0x01017CF0>\n\n    def test_chatt_01(self):\n        time.sleep(3)\n        # 首页点击键盘\n        self.page.homepage.click_keyboard()\n        # 对话页输入“你爸爸妈妈是谁”\n        self.page.sessionpage.input_keyboard_input(\"你爸爸妈妈是谁\")\n        # 对话页点击发送\n        self.page.sessionpage.click_send_button()\n        # 断言\n>       assert \"工程师\" in self.page.sessionpage.get_text(self.page.sessionpage.tts_reply)\nE       assert '工程师' in '我的家人有个伟大的名字，叫科技工作者，又名程序员'\nE        +  where '我的家人有个伟大的名字，叫科技工作者，又名程序员' = <bound method BaseAction.get_text of <page.sessionpage.SessionPage object at 0x01017470>>(('xpath', \"//*[@resource-id='com.xiaomi.xiaoailite:id/tv_toast_view']\"))\nE        +    where <bound method BaseAction.get_text of <page.sessionpage.SessionPage object at 0x01017470>> = <page.sessionpage.SessionPage object at 0x01017470>.get_text\nE        +      where <page.sessionpage.SessionPage object at 0x01017470> = <page.page.Page object at 0x01017D10>.sessionpage\nE        +        where <page.page.Page object at 0x01017D10> = <scripts.test1_domain.TestDomain object at 0x01017CF0>.page\nE        +    and   ('xpath', \"//*[@resource-id='com.xiaomi.xiaoailite:id/tv_toast_view']\") = <page.sessionpage.SessionPage object at 0x01017130>.tts_reply\nE        +      where <page.sessionpage.SessionPage object at 0x01017130> = <page.page.Page object at 0x01017D10>.sessionpage\nE        +        where <page.page.Page object at 0x01017D10> = <scripts.test1_domain.TestDomain object at 0x01017CF0>.page\n\nscripts\\test1_domain.py:1551: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-IJRQON0"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "13864-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "scripts.test1_domain"
+  }, {
+    "name" : "testClass",
+    "value" : "scripts.test1_domain"
+  }, {
+    "name" : "testMethod",
+    "value" : "TestDomain.test_chatt_01"
+  }, {
+    "name" : "package",
+    "value" : "scripts.test1_domain"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "fdd14a6436e635cb.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,60 @@
+{
+  "uid" : "fdba6e5e9e6f1a6b",
+  "name" : "TestDomain.test_to_chushibiao_poem",
+  "fullName" : "scripts.test1_domain.TestDomain.test_to_chushibiao_poem",
+  "historyId" : "45ce68c74bd391b06c042b87b289771b",
+  "time" : {
+    "start" : 1599964572698,
+    "stop" : 1599964609119,
+    "duration" : 36421
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-IJRQON0"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "13864-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "scripts.test1_domain"
+  }, {
+    "name" : "testClass",
+    "value" : "scripts.test1_domain"
+  }, {
+    "name" : "testMethod",
+    "value" : "TestDomain.test_to_chushibiao_poem"
+  }, {
+    "name" : "package",
+    "value" : "scripts.test1_domain"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "fdba6e5e9e6f1a6b.json",
+  "parameterValues" : [ ]
+}

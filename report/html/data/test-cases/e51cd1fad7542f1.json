@@ -1,0 +1,66 @@
+{
+  "uid" : "e51cd1fad7542f1",
+  "name" : "TestDomain.test_scence_04",
+  "fullName" : "scripts.test1_domain.TestDomain.test_scence_04",
+  "historyId" : "2469b727f06d2061e1c661bc7c7a4818",
+  "time" : {
+    "start" : 1599963808283,
+    "stop" : 1599963922974,
+    "duration" : 114691
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert '一天' in '早上好！哈哈，周末啦！今天是9月13日，周日，农历庚子年七月二十六。武汉洪山今天晴转小雨，现在阴，晚上11点有小雨，记得带伞20度到27度，和昨天差不多，空气质量指数51，空气还可以'\n +  where '早上好！哈哈，周末啦！今天是9月13日，周日，农历庚子年七月二十六。武汉洪山今天晴转小雨，现在阴，晚上11点有小雨，记得带伞20度到27度，和昨天差不多，空气质量指数51，空气还可以' = <bound method BaseAction.get_text of <page.sessionpage.SessionPage object at 0x04356410>>(('xpath', \"//*[@resource-id='com.xiaomi.xiaoailite:id/tv_toast_view']\"))\n +    where <bound method BaseAction.get_text of <page.sessionpage.SessionPage object at 0x04356410>> = <page.sessionpage.SessionPage object at 0x04356410>.get_text\n +      where <page.sessionpage.SessionPage object at 0x04356410> = <page.page.Page object at 0x04356690>.sessionpage\n +        where <page.page.Page object at 0x04356690> = <scripts.test1_domain.TestDomain object at 0x04356670>.page\n +    and   ('xpath', \"//*[@resource-id='com.xiaomi.xiaoailite:id/tv_toast_view']\") = <page.sessionpage.SessionPage object at 0x043566D0>.tts_reply\n +      where <page.sessionpage.SessionPage object at 0x043566D0> = <page.page.Page object at 0x04356690>.sessionpage\n +        where <page.page.Page object at 0x04356690> = <scripts.test1_domain.TestDomain object at 0x04356670>.page",
+  "statusTrace" : "self = <scripts.test1_domain.TestDomain object at 0x04356670>\n\n    def test_scence_04(self):\n        time.sleep(3)\n        # 首页点击键盘\n        self.page.homepage.click_keyboard()\n        # 对话页输入“早上好”\n        self.page.sessionpage.input_keyboard_input(\"早上好\")\n        # 对话页点击发送\n        self.page.sessionpage.click_send_button()\n        # 断言\n>       assert \"一天\" in self.page.sessionpage.get_text(self.page.sessionpage.tts_reply)\nE       assert '一天' in '早上好！哈哈，周末啦！今天是9月13日，周日，农历庚子年七月二十六。武汉洪山今天晴转小雨，现在阴，晚上11点有小雨，记得带伞20度到27度，和昨天差不多，空气质量指数51，空气还可以'\nE        +  where '早上好！哈哈，周末啦！今天是9月13日，周日，农历庚子年七月二十六。武汉洪山今天晴转小雨，现在阴，晚上11点有小雨，记得带伞20度到27度，和昨天差不多，空气质量指数51，空气还可以' = <bound method BaseAction.get_text of <page.sessionpage.SessionPage object at 0x04356410>>(('xpath', \"//*[@resource-id='com.xiaomi.xiaoailite:id/tv_toast_view']\"))\nE        +    where <bound method BaseAction.get_text of <page.sessionpage.SessionPage object at 0x04356410>> = <page.sessionpage.SessionPage object at 0x04356410>.get_text\nE        +      where <page.sessionpage.SessionPage object at 0x04356410> = <page.page.Page object at 0x04356690>.sessionpage\nE        +        where <page.page.Page object at 0x04356690> = <scripts.test1_domain.TestDomain object at 0x04356670>.page\nE        +    and   ('xpath', \"//*[@resource-id='com.xiaomi.xiaoailite:id/tv_toast_view']\") = <page.sessionpage.SessionPage object at 0x043566D0>.tts_reply\nE        +      where <page.sessionpage.SessionPage object at 0x043566D0> = <page.page.Page object at 0x04356690>.sessionpage\nE        +        where <page.page.Page object at 0x04356690> = <scripts.test1_domain.TestDomain object at 0x04356670>.page\n\nscripts\\test1_domain.py:464: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-IJRQON0"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "13864-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "scripts.test1_domain"
+  }, {
+    "name" : "testClass",
+    "value" : "scripts.test1_domain"
+  }, {
+    "name" : "testMethod",
+    "value" : "TestDomain.test_scence_04"
+  }, {
+    "name" : "package",
+    "value" : "scripts.test1_domain"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "e51cd1fad7542f1.json",
+  "parameterValues" : [ ]
+}

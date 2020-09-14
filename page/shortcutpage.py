@@ -29,15 +29,6 @@ class ShortCutPage(BaseAction):
     #确定按钮
     add_to_the_desktop_confirm = By.ID,'com.xiaomi.xiaoailite:id/btn_confirm'
 
-    #添加到桌面的弹窗
-    add_desk_pop=By.XPATH,"//*[@text='取消']"
-
-    #已尝试添加到桌面的弹窗
-    add_desk_allary=By.ID,"com.xiaomi.xiaoailite: id / btn_confirm"
-
-
-
-
     #点击课程表-添加
     def click_school_timetable_add(self):
         self.click(self.school_timetable_add)
@@ -52,49 +43,11 @@ class ShortCutPage(BaseAction):
         self.click(self.add_to_the_desktop_confirm)
 
 
-    # def is_add_desk_pop_exist(self):
-    #     self.is_button_exist(self.add_desk_pop)
-    #
-    # def is_add_desk_allary_exist(self):
-    #     self.is_button_exist(self.add_desk_allary)
-
-
-
-
-
-
-
-
-
-
         # 判断弹窗是否存在：True,没有弹窗：False
     def if_exist_pop_up_window(self):
         if "取消" == self.get_text(self.school_home_screen_cancel):
             return True
         return False
-
-
-   #2020.09.10
-    # 小爱同学翻译--添加
-    xiaoai_translate_add=By.XPATH,"//*[@text='添加' and @index='7']"
-
-    #小爱同学添加到主屏幕
-    xiaoai_translate_button=By.XPATH,"//*[@text='添加']"
-
-
-    #点击小爱翻译——添加
-    def click_xiaoai_translate_add(self):
-        self.click(self.xiaoai_translate_add)
-
-    # 点击添加到主屏幕——添加
-    def click_xiaoai_translate_button(self):
-        self.click(self.xiaoai_translate_button)
-
-
-    def is_add_desk_pop_exist(self):
-        self.driver.find_elements_by_xpath("//*[contains(@resource-id,'widget_name')]")
-
-
 
 
 

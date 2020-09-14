@@ -95,7 +95,10 @@ class SessionPage(BaseAction):
     def ren_translation_title(self):
         return self.get_text(self.translation_title)
 
-
+    # 新增
+    # 点击小卡icon图标
+    def click_small_card_icon(self):
+        self.click(self.small_card_icon)
 
 
 

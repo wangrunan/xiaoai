@@ -5,6 +5,7 @@ from page.childinfopage import ChildinfoPage
 from page.deviceguidepage import DeviceGuidePage
 from page.historyrecordpage import HistoryRecordPage
 from page.homepage import HomePage
+from page.littlefloatingballpage import LittlefloationballPage
 from page.loginpage import LoginPage
 from page.matecirclepage import MateCirclePage
 
@@ -13,6 +14,7 @@ from page.mydevicepage import MyDevicePage
 from page.myprizepage import MyprizePage
 from page.mytrainpage import MyTrainPage
 from page.personaldatapage import PersonalDataPage
+from page.problem_feedback import Problem_Feedback
 from page.sessionpage import SessionPage
 from page.suggestpage import SuggestPage
 from page.xiaoailaboratorypage import XiaoaiLaboratoryPage
@@ -106,3 +108,11 @@ class Page:
     @property
     def translation(self):
         return TranslationPage(self.driver)
+
+    @property
+    def problemfeedback(self):
+        return Problem_Feedback(self.driver)
+
+    @property
+    def littlefloationballPage(self):
+        return LittlefloationballPage(self.driver)

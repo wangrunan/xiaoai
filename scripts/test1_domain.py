@@ -14,40 +14,40 @@ class TestDomain:
         self.driver.quit()
 # calculate_tax
     #query：月薪一万要交多少税;
-    def test_calculate_tax_01(self):
-        time.sleep(2)
-        # 首页点击键盘
-        self.page.homepage.click_keyboard()
-        # 对话页输入“月薪一万要交多少税”
-        self.page.sessionpage.input_keyboard_input("月薪一万要交多少税")
-        # 对话页点击发送
-        self.page.sessionpage.click_send_button()
-        # 断言
-        assert self.page.sessionpage.get_text(self.page.sessionpage.small_card_icon) == "计算器"
-        assert "缴纳个税" in self.page.sessionpage.get_text(self.page.sessionpage.samall_card_text)
+    # def test_calculate_tax_01(self):
+    #     time.sleep(2)
+    #     # 首页点击键盘
+    #     self.page.homepage.click_keyboard()
+    #     # 对话页输入“月薪一万要交多少税”
+    #     self.page.sessionpage.input_keyboard_input("月薪一万要交多少税")
+    #     # 对话页点击发送
+    #     self.page.sessionpage.click_send_button()
+    #     # 断言
+    #     assert self.page.sessionpage.get_text(self.page.sessionpage.small_card_icon) == "计算器"
+    #     assert "缴纳个税" in self.page.sessionpage.get_text(self.page.sessionpage.samall_card_text)
 
     #query：计算个税; 十万;
-    def test_calculate_tax_02(self):
-        time.sleep(2)
-        # 首页点击键盘
-        self.page.homepage.click_keyboard()
-        # 对话页输入“计算个税”
-        self.page.sessionpage.input_keyboard_input("计算个税")
-
-        # 对话页点击发送
-        self.page.sessionpage.click_send_button()
-        time.sleep(3)
-        # 返回
-        self.driver.press_keycode(4)
-        # 首页点击键盘
-        self.page.homepage.click_keyboard()
-        # 对话页输入“十万”
-        self.page.sessionpage.input_keyboard_input("十万")
-        # 对话页点击发送
-        self.page.sessionpage.click_send_button()
-        # 断言
-        assert self.page.sessionpage.get_text(self.page.sessionpage.small_card_icon) == "计算器"
-        assert "缴纳个税" in self.page.sessionpage.get_text(self.page.sessionpage.samall_card_text)
+    # def test_calculate_tax_02(self):
+    #     time.sleep(2)
+    #     # 首页点击键盘
+    #     self.page.homepage.click_keyboard()
+    #     # 对话页输入“计算个税”
+    #     self.page.sessionpage.input_keyboard_input("计算个税")
+    #
+    #     # 对话页点击发送
+    #     self.page.sessionpage.click_send_button()
+    #     time.sleep(3)
+    #     # 返回
+    #     self.driver.press_keycode(4)
+    #     # 首页点击键盘
+    #     self.page.homepage.click_keyboard()
+    #     # 对话页输入“十万”
+    #     self.page.sessionpage.input_keyboard_input("十万")
+    #     # 对话页点击发送
+    #     self.page.sessionpage.click_send_button()
+    #     # 断言
+    #     assert self.page.sessionpage.get_text(self.page.sessionpage.small_card_icon) == "计算器"
+    #     assert "缴纳个税" in self.page.sessionpage.get_text(self.page.sessionpage.samall_card_text)
 
 # voice  声音
     # query：吸尘器的声音
@@ -426,7 +426,7 @@ class TestDomain:
         # 断言
         assert "拜拜" in self.page.sessionpage.get_text(self.page.sessionpage.tts_reply)
 
-    # query：晚上好;
+    # query：晚上好;  场景化问题
     def test_scence_02(self):
         time.sleep(3)
         # 首页点击键盘
@@ -451,7 +451,7 @@ class TestDomain:
         # 断言
         assert "问题" in self.page.sessionpage.get_text(self.page.sessionpage.tts_reply)
 
-    # query：早上好;
+    # query：早上好; 场景化问题
     def test_scence_04(self):
         time.sleep(3)
         # 首页点击键盘
@@ -762,78 +762,78 @@ class TestDomain:
 
 # 计算数量
     #query：把五百五十五元变成大写
-    def test_count_01(self):
-        time.sleep(3)
-        # 首页点击键盘
-        self.page.homepage.click_keyboard()
-        # 对话页输入“把五百五十五元变成大写”
-        self.page.sessionpage.input_keyboard_input("把五百五十五元变成大写")
-        # 对话页点击发送
-        self.page.sessionpage.click_send_button()
-        #断言
-        assert self.page.sessionpage.get_text(self.page.sessionpage.small_card_icon) == "计算器"
+    # def test_count_01(self):
+    #     time.sleep(3)
+    #     # 首页点击键盘
+    #     self.page.homepage.click_keyboard()
+    #     # 对话页输入“把五百五十五元变成大写”
+    #     self.page.sessionpage.input_keyboard_input("把五百五十五元变成大写")
+    #     # 对话页点击发送
+    #     self.page.sessionpage.click_send_button()
+    #     #断言
+    #     assert self.page.sessionpage.get_text(self.page.sessionpage.small_card_icon) == "计算器"
 
 
     #query：100除以0是多少;
-    def test_count_02(self):
-        time.sleep(3)
-        # 首页点击键盘
-        self.page.homepage.click_keyboard()
-        # 对话页输入“100除以0是多少”
-        self.page.sessionpage.input_keyboard_input("100除以0是多少")
-        # 对话页点击发送
-        self.page.sessionpage.click_send_button()
-        #断言
-        assert self.page.sessionpage.get_text(self.page.sessionpage.small_card_icon) == "计算器"
+    # def test_count_02(self):
+    #     time.sleep(3)
+    #     # 首页点击键盘
+    #     self.page.homepage.click_keyboard()
+    #     # 对话页输入“100除以0是多少”
+    #     self.page.sessionpage.input_keyboard_input("100除以0是多少")
+    #     # 对话页点击发送
+    #     self.page.sessionpage.click_send_button()
+    #     #断言
+    #     assert self.page.sessionpage.get_text(self.page.sessionpage.small_card_icon) == "计算器"
 
     # query：十一乘以十二;
-    def test_count_03(self):
-        time.sleep(3)
-        # 首页点击键盘
-        self.page.homepage.click_keyboard()
-        # 对话页输入“十一乘以十二”
-        self.page.sessionpage.input_keyboard_input("十一乘以十二")
-        # 对话页点击发送
-        self.page.sessionpage.click_send_button()
-        #断言
-        assert self.page.sessionpage.get_text(self.page.sessionpage.small_card_icon) == "计算器"
+    # def test_count_03(self):
+    #     time.sleep(3)
+    #     # 首页点击键盘
+    #     self.page.homepage.click_keyboard()
+    #     # 对话页输入“十一乘以十二”
+    #     self.page.sessionpage.input_keyboard_input("十一乘以十二")
+    #     # 对话页点击发送
+    #     self.page.sessionpage.click_send_button()
+    #     #断言
+    #     assert self.page.sessionpage.get_text(self.page.sessionpage.small_card_icon) == "计算器"
 
     # query：十乘以十;
-    def test_count_04(self):
-        time.sleep(3)
-        # 首页点击键盘
-        self.page.homepage.click_keyboard()
-        # 对话页输入“十乘以十”
-        self.page.sessionpage.input_keyboard_input("十乘以十")
-        # 对话页点击发送
-        self.page.sessionpage.click_send_button()
-        #断言
-        assert self.page.sessionpage.get_text(self.page.sessionpage.small_card_icon) == "计算器"
-        assert self.page.sessionpage.get_text(self.page.sessionpage.tts_reply) == "答案是一百"
+    # def test_count_04(self):
+        # time.sleep(3)
+        # # 首页点击键盘
+        # self.page.homepage.click_keyboard()
+        # # 对话页输入“十乘以十”
+        # self.page.sessionpage.input_keyboard_input("十乘以十")
+        # # 对话页点击发送
+        # self.page.sessionpage.click_send_button()
+        # #断言
+        # assert self.page.sessionpage.get_text(self.page.sessionpage.small_card_icon) == "计算器"
+        # assert self.page.sessionpage.get_text(self.page.sessionpage.tts_reply) == "答案是一百"
 #9.6 熊浩
-    def test_count_05(self):
-        time.sleep(3)
-        # 首页点击键盘
-        self.page.homepage.click_keyboard()
-        # 对话页输入“十乘以十”
-        self.page.sessionpage.input_keyboard_input("身高1米6标准体重是多少")
-        # 对话页点击发送
-        self.page.sessionpage.click_send_button()
-        # 断言
-        assert self.page.sessionpage.get_text(self.page.sessionpage.small_card_icon) == "计算器"
-        assert self.page.sessionpage.get_text(self.page.sessionpage.tts_reply) == "标准体重为54.0千克"
+    # def test_count_05(self):
+    #     time.sleep(3)
+    #     # 首页点击键盘
+    #     self.page.homepage.click_keyboard()
+    #     # 对话页输入“十乘以十”
+    #     self.page.sessionpage.input_keyboard_input("身高1米6标准体重是多少")
+    #     # 对话页点击发送
+    #     self.page.sessionpage.click_send_button()
+    #     # 断言
+    #     assert self.page.sessionpage.get_text(self.page.sessionpage.small_card_icon) == "计算器"
+    #     assert self.page.sessionpage.get_text(self.page.sessionpage.tts_reply) == "标准体重为54.0千克"
 
-    def test_count_06(self):
-        time.sleep(3)
-        # 首页点击键盘
-        self.page.homepage.click_keyboard()
-        # 对话页输入“十乘以十”
-        self.page.sessionpage.input_keyboard_input("爸爸的小姨叫什么")
-        # 对话页点击发送
-        self.page.sessionpage.click_send_button()
-        # 断言
-        assert self.page.sessionpage.get_text(self.page.sessionpage.small_card_icon) == "计算器"
-        assert self.page.sessionpage.get_text(self.page.sessionpage.tts_reply) == "你可以喊他祖姨母"
+    # def test_count_06(self):
+    #     time.sleep(3)
+    #     # 首页点击键盘
+    #     self.page.homepage.click_keyboard()
+    #     # 对话页输入“十乘以十”
+    #     self.page.sessionpage.input_keyboard_input("爸爸的小姨叫什么")
+    #     # 对话页点击发送
+    #     self.page.sessionpage.click_send_button()
+    #     # 断言
+    #     assert self.page.sessionpage.get_text(self.page.sessionpage.small_card_icon) == "计算器"
+    #     assert self.page.sessionpage.get_text(self.page.sessionpage.tts_reply) == "你可以喊他祖姨母"
 
 # 开方平台
     # query：数字对战:退出
@@ -1180,17 +1180,17 @@ class TestDomain:
 
 #soundboxnews 疫情
     #query:肺炎疫情
-    def test_epidemic(self):
-        time.sleep(3)
-        # 首页点击键盘
-        self.page.homepage.click_keyboard()
-        # 对话页输入“肺炎疫情”
-        self.page.sessionpage.input_keyboard_input("肺炎疫情")
-        # 对话页点击发送
-        self.page.sessionpage.click_send_button()
-        time.sleep(2)
-        # 断言
-        assert "确诊" in self.page.sessionpage.get_text(self.page.sessionpage.tts_reply)
+    # def test_epidemic(self):
+    #     time.sleep(3)
+    #     # 首页点击键盘
+    #     self.page.homepage.click_keyboard()
+    #     # 对话页输入“肺炎疫情”
+    #     self.page.sessionpage.input_keyboard_input("肺炎疫情")
+    #     # 对话页点击发送
+    #     self.page.sessionpage.click_send_button()
+    #     time.sleep(2)
+    #     # 断言
+    #     assert "确诊" in self.page.sessionpage.get_text(self.page.sessionpage.tts_reply)
 
 # customer
     #  Air2耳机如何充电;
@@ -1266,29 +1266,29 @@ class TestDomain:
 
 
     # 关闭GPS
-    def test_mobilecontrolios_03(self):
-        time.sleep(3)
-        # 首页点击键盘
-        self.page.homepage.click_keyboard()
-        # 对话页输入“关闭GPS”
-        self.page.sessionpage.input_keyboard_input("关闭GPS")
-        # 对话页点击发送
-        self.page.sessionpage.click_send_button()
-        time.sleep(2)
-        # 断言
-        assert self.driver.current_activity == ".Settings$LocationSettingsActivity"
+    # def test_mobilecontrolios_03(self):
+    #     time.sleep(3)
+    #     # 首页点击键盘
+    #     self.page.homepage.click_keyboard()
+    #     # 对话页输入“关闭GPS”
+    #     self.page.sessionpage.input_keyboard_input("关闭GPS")
+    #     # 对话页点击发送
+    #     self.page.sessionpage.click_send_button()
+    #     time.sleep(2)
+    #     # 断言
+    #     assert self.driver.current_activity == ".Settings$LocationSettingsActivity"
 
     # 打开GPS
-    def test_mobilecontrolios_04(self):
-        time.sleep(3)
-        # 首页点击键盘
-        self.page.homepage.click_keyboard()
-        # 对话页输入“打开GPS”
-        self.page.sessionpage.input_keyboard_input("打开GPS")
-        # 对话页点击发送
-        self.page.sessionpage.click_send_button()
-        # 断言
-        assert "已打开" in self.page.sessionpage.get_text(self.page.sessionpage.tts_reply)
+    # def test_mobilecontrolios_04(self):
+    #     time.sleep(3)
+    #     # 首页点击键盘
+    #     self.page.homepage.click_keyboard()
+    #     # 对话页输入“打开GPS”
+    #     self.page.sessionpage.input_keyboard_input("打开GPS")
+    #     # 对话页点击发送
+    #     self.page.sessionpage.click_send_button()
+    #     # 断言
+    #     assert "已打开" in self.page.sessionpage.get_text(self.page.sessionpage.tts_reply)
 
 #translation 翻译
     # query：今天天气真好用日语怎么说;
@@ -1523,22 +1523,22 @@ class TestDomain:
 
 # area_convert 换算
     # 一平方米等于多少平方厘米;
-    def test_area_convert_01(self):
-        time.sleep(3)
-        # 首页点击键盘
-        self.page.homepage.click_keyboard()
-        # 对话页输入“一平方米等于多少平方厘米”
-        self.page.sessionpage.input_keyboard_input("一平方米等于多少平方厘米")
-        # 对话页点击发送
-        self.page.sessionpage.click_send_button()
-        # 断言
-        assert self.page.sessionpage.get_text(self.page.sessionpage.small_card_icon) == "计算器"
+    # def test_area_convert_01(self):
+    #     time.sleep(3)
+    #     # 首页点击键盘
+    #     self.page.homepage.click_keyboard()
+    #     # 对话页输入“一平方米等于多少平方厘米”
+    #     self.page.sessionpage.input_keyboard_input("一平方米等于多少平方厘米")
+    #     # 对话页点击发送
+    #     self.page.sessionpage.click_send_button()
+    #     # 断言
+    #     assert self.page.sessionpage.get_text(self.page.sessionpage.small_card_icon) == "计算器"
 
 # miot  智能家庭
 
 
 # chat  闲聊
-    #query：你爸爸妈妈是谁;
+    #query：你爸爸妈妈是谁;  回复不唯一
     def test_chatt_01(self):
         time.sleep(3)
         # 首页点击键盘
@@ -1551,6 +1551,7 @@ class TestDomain:
         assert "工程师" in self.page.sessionpage.get_text(self.page.sessionpage.tts_reply)
 
     # query：陪我聊天; 你叫什么名字;
+    # 回复不唯一
     def test_chatt_02(self):
         time.sleep(3)
         # 首页点击键盘
@@ -1574,7 +1575,7 @@ class TestDomain:
         assert "小爱" in self.page.sessionpage.get_text(self.page.sessionpage.tts_reply)
 
 
-    # query：你几岁了;
+    # query：你几岁了;  回复不唯一
     def test_chatt_03(self):
         time.sleep(3)
         # 首页点击键盘
@@ -1808,30 +1809,30 @@ class TestDomain:
 
 # money_convert  换算
     # query：一百日元是多少人民币;
-    def test_money_convert_01(self):
-        time.sleep(3)
-        # 首页点击键盘
-        self.page.homepage.click_keyboard()
-        # 对话页输入“一百日元是多少人民币”
-        self.page.sessionpage.input_keyboard_input("一百日元是多少人民币")
-        # 对话页点击发送
-        self.page.sessionpage.click_send_button()
-        # 断言
-        assert "汇率转换" in self.page.sessionpage.get_text(self.page.sessionpage.small_card_content_tittle)
-        assert self.page.sessionpage.get_text(self.page.sessionpage.small_card_icon) == "计算器"
+    # def test_money_convert_01(self):
+    #     time.sleep(3)
+    #     # 首页点击键盘
+    #     self.page.homepage.click_keyboard()
+    #     # 对话页输入“一百日元是多少人民币”
+    #     self.page.sessionpage.input_keyboard_input("一百日元是多少人民币")
+    #     # 对话页点击发送
+    #     self.page.sessionpage.click_send_button()
+    #     # 断言
+    #     assert "汇率转换" in self.page.sessionpage.get_text(self.page.sessionpage.small_card_content_tittle)
+    #     assert self.page.sessionpage.get_text(self.page.sessionpage.small_card_icon) == "计算器"
 
     # 一升等于多少米;
-    def test_money_convert_02(self):
-        time.sleep(3)
-        # 首页点击键盘
-        self.page.homepage.click_keyboard()
-        # 对话页输入“一升等于多少米”
-        self.page.sessionpage.input_keyboard_input("一升等于多少米")
-        # 对话页点击发送
-        self.page.sessionpage.click_send_button()
-        # 断言
-        assert "无法进行转换" in self.page.sessionpage.get_text(self.page.sessionpage.samall_card_text)
-        assert self.page.sessionpage.get_text(self.page.sessionpage.small_card_icon) == "计算器"
+    # def test_money_convert_02(self):
+    #     time.sleep(3)
+    #     # 首页点击键盘
+    #     self.page.homepage.click_keyboard()
+    #     # 对话页输入“一升等于多少米”
+    #     self.page.sessionpage.input_keyboard_input("一升等于多少米")
+    #     # 对话页点击发送
+    #     self.page.sessionpage.click_send_button()
+    #     # 断言
+    #     assert "无法进行转换" in self.page.sessionpage.get_text(self.page.sessionpage.samall_card_text)
+    #     assert self.page.sessionpage.get_text(self.page.sessionpage.small_card_icon) == "计算器"
 
 # ask_openplatform  小冰
     # query：召唤小冰
@@ -1867,137 +1868,137 @@ class TestDomain:
 
 # relative_convert  关系
     #query：爸爸的爸爸的女儿的儿子
-    def test_relative_convert_01(self):
-        time.sleep(3)
-        # 首页点击键盘
-        self.page.homepage.click_keyboard()
-        # 对话页输入“爸爸的爸爸的女儿的儿子”
-        self.page.sessionpage.input_keyboard_input("爸爸的爸爸的女儿的儿子")
-        # 对话页点击发送
-        self.page.sessionpage.click_send_button()
-        # 断言
-        assert "亲戚计算" in self.page.sessionpage.get_text(self.page.sessionpage.small_card_content_tittle)
-        assert self.page.sessionpage.get_text(self.page.sessionpage.small_card_icon) == "计算器"
+    # def test_relative_convert_01(self):
+    #     time.sleep(3)
+    #     # 首页点击键盘
+    #     self.page.homepage.click_keyboard()
+    #     # 对话页输入“爸爸的爸爸的女儿的儿子”
+    #     self.page.sessionpage.input_keyboard_input("爸爸的爸爸的女儿的儿子")
+    #     # 对话页点击发送
+    #     self.page.sessionpage.click_send_button()
+    #     # 断言
+    #     assert "亲戚计算" in self.page.sessionpage.get_text(self.page.sessionpage.small_card_content_tittle)
+    #     assert self.page.sessionpage.get_text(self.page.sessionpage.small_card_icon) == "计算器"
 
 
 # 刘锐(放到test_openapp里面了，如果一个手机可以跑，可以取消注释）
 # 打开app
     #  query:打开计算器
-    def test_open_app_01(self):
-        time.sleep(3)
-        # 首页点击键盘
-        self.page.homepage.click_keyboard()
-        # 对话页输入“打开计算器”
-        self.page.sessionpage.input_keyboard_input("打开计算器")
-        # 对话页点击发送
-        self.page.sessionpage.click_send_button()
-        time.sleep(3)
-        # 断言
-        assert self.driver.current_activity == ".Calculator"
-
-    #  query:打开照相机
-    def test_open_app_02(self):
-        time.sleep(3)
-        # 首页点击键盘
-        self.page.homepage.click_keyboard()
-        # 对话页输入“打开照相机”
-        self.page.sessionpage.input_keyboard_input("打开照相机")
-        # 对话页点击发送
-        self.page.sessionpage.click_send_button()
-        time.sleep(3)
-        # 断言
-        assert self.driver.current_activity == ".camera"
-
-    #  query:打开相册
-    def test_open_app_03(self):
-        time.sleep(3)
-        # 首页点击键盘
-        self.page.homepage.click_keyboard()
-        # 对话页输入“打开相册”
-        self.page.sessionpage.input_keyboard_input("打开相册")
-        # 对话页点击发送
-        self.page.sessionpage.click_send_button()
-        time.sleep(3)
-        # 断言
-        assert self.driver.current_activity == "com.huawei.gallery.app.GalleryMain"
-
-    #  query:打开设置
-    def test_open_app_04(self):
-        time.sleep(3)
-        # 首页点击键盘
-        self.page.homepage.click_keyboard()
-        # 对话页输入“打开设置”
-        self.page.sessionpage.input_keyboard_input("打开设置")
-        # 对话页点击发送
-        self.page.sessionpage.click_send_button()
-        time.sleep(3)
-        # 断言
-        assert self.driver.current_activity == ".HWSettings"
-
-    #  query:打开微信
-    def test_open_app_05(self):
-        time.sleep(3)
-        # 首页点击键盘
-        self.page.homepage.click_keyboard()
-        # 对话页输入“打开微信”
-        self.page.sessionpage.input_keyboard_input("打开微信")
-        # 对话页点击发送
-        self.page.sessionpage.click_send_button()
-        time.sleep(3)
-        # 断言
-        assert self.driver.current_activity == ".plugin.account.ui.LoginPasswordUI"
-
-    #  query:打开日历
-    def test_open_app_06(self):
-        time.sleep(3)
-        # 首页点击键盘
-        self.page.homepage.click_keyboard()
-        # 对话页输入“打开日历”
-        self.page.sessionpage.input_keyboard_input("打开日历")
-        # 对话页点击发送
-        self.page.sessionpage.click_send_button()
-        time.sleep(3)
-        # 断言
-        assert self.driver.current_activity == ".AllInOneActivity"
-
-    #  query:打开地图  （已下载高德地图）
-    def test_open_app_07(self):
-        time.sleep(3)
-        # 首页点击键盘
-        self.page.homepage.click_keyboard()
-        # 对话页输入“打开地图”
-        self.page.sessionpage.input_keyboard_input("打开地图")
-        # 对话页点击发送
-        self.page.sessionpage.click_send_button()
-        time.sleep(3)
-        # 断言
-        assert self.driver.current_activity == "com.autonavi.map.activity.NewMapActivity"
-
-    #  query:打开微博（未安装微博）
-    def test_open_app_08(self):
-        time.sleep(3)
-        # 首页点击键盘
-        self.page.homepage.click_keyboard()
-        # 对话页输入“打开微博”
-        self.page.sessionpage.input_keyboard_input("打开微博")
-        # 对话页点击发送
-        self.page.sessionpage.click_send_button()
-        time.sleep(3)
-        # 断言
-        assert "下载" in self.page.sessionpage.get_text(self.page.sessionpage.tts_reply)
-
-    #  query:打开文件管理
-    def test_open_app_09(self):
-        time.sleep(3)
-        # 首页点击键盘
-        self.page.homepage.click_keyboard()
-        # 对话页输入“打开文件”
-        self.page.sessionpage.input_keyboard_input("打开文件管理")
-        # 对话页点击发送
-        self.page.sessionpage.click_send_button()
-        time.sleep(3)
-        # 断言
-        assert self.driver.current_activity == ".filemanager.FileManager"
+    # def test_open_app_01(self):
+    #     time.sleep(3)
+    #     # 首页点击键盘
+    #     self.page.homepage.click_keyboard()
+    #     # 对话页输入“打开计算器”
+    #     self.page.sessionpage.input_keyboard_input("打开计算器")
+    #     # 对话页点击发送
+    #     self.page.sessionpage.click_send_button()
+    #     time.sleep(3)
+    #     # 断言
+    #     assert self.driver.current_activity == ".Calculator"
+    #
+    # #  query:打开照相机
+    # def test_open_app_02(self):
+    #     time.sleep(3)
+    #     # 首页点击键盘
+    #     self.page.homepage.click_keyboard()
+    #     # 对话页输入“打开照相机”
+    #     self.page.sessionpage.input_keyboard_input("打开照相机")
+    #     # 对话页点击发送
+    #     self.page.sessionpage.click_send_button()
+    #     time.sleep(3)
+    #     # 断言
+    #     assert self.driver.current_activity == ".camera"
+    #
+    # #  query:打开相册
+    # def test_open_app_03(self):
+    #     time.sleep(3)
+    #     # 首页点击键盘
+    #     self.page.homepage.click_keyboard()
+    #     # 对话页输入“打开相册”
+    #     self.page.sessionpage.input_keyboard_input("打开相册")
+    #     # 对话页点击发送
+    #     self.page.sessionpage.click_send_button()
+    #     time.sleep(3)
+    #     # 断言
+    #     assert self.driver.current_activity == "com.huawei.gallery.app.GalleryMain"
+    #
+    # #  query:打开设置
+    # def test_open_app_04(self):
+    #     time.sleep(3)
+    #     # 首页点击键盘
+    #     self.page.homepage.click_keyboard()
+    #     # 对话页输入“打开设置”
+    #     self.page.sessionpage.input_keyboard_input("打开设置")
+    #     # 对话页点击发送
+    #     self.page.sessionpage.click_send_button()
+    #     time.sleep(3)
+    #     # 断言
+    #     assert self.driver.current_activity == ".HWSettings"
+    #
+    # #  query:打开微信
+    # def test_open_app_05(self):
+    #     time.sleep(3)
+    #     # 首页点击键盘
+    #     self.page.homepage.click_keyboard()
+    #     # 对话页输入“打开微信”
+    #     self.page.sessionpage.input_keyboard_input("打开微信")
+    #     # 对话页点击发送
+    #     self.page.sessionpage.click_send_button()
+    #     time.sleep(3)
+    #     # 断言
+    #     assert self.driver.current_activity == ".plugin.account.ui.LoginPasswordUI"
+    #
+    # #  query:打开日历
+    # def test_open_app_06(self):
+    #     time.sleep(3)
+    #     # 首页点击键盘
+    #     self.page.homepage.click_keyboard()
+    #     # 对话页输入“打开日历”
+    #     self.page.sessionpage.input_keyboard_input("打开日历")
+    #     # 对话页点击发送
+    #     self.page.sessionpage.click_send_button()
+    #     time.sleep(3)
+    #     # 断言
+    #     assert self.driver.current_activity == ".AllInOneActivity"
+    #
+    # #  query:打开地图  （已下载高德地图）
+    # def test_open_app_07(self):
+    #     time.sleep(3)
+    #     # 首页点击键盘
+    #     self.page.homepage.click_keyboard()
+    #     # 对话页输入“打开地图”
+    #     self.page.sessionpage.input_keyboard_input("打开地图")
+    #     # 对话页点击发送
+    #     self.page.sessionpage.click_send_button()
+    #     time.sleep(3)
+    #     # 断言
+    #     assert self.driver.current_activity == "com.autonavi.map.activity.NewMapActivity"
+    #
+    # #  query:打开微博（未安装微博）
+    # def test_open_app_08(self):
+    #     time.sleep(3)
+    #     # 首页点击键盘
+    #     self.page.homepage.click_keyboard()
+    #     # 对话页输入“打开微博”
+    #     self.page.sessionpage.input_keyboard_input("打开微博")
+    #     # 对话页点击发送
+    #     self.page.sessionpage.click_send_button()
+    #     time.sleep(3)
+    #     # 断言
+    #     assert "下载" in self.page.sessionpage.get_text(self.page.sessionpage.tts_reply)
+    #
+    # #  query:打开文件管理
+    # def test_open_app_09(self):
+    #     time.sleep(3)
+    #     # 首页点击键盘
+    #     self.page.homepage.click_keyboard()
+    #     # 对话页输入“打开文件”
+    #     self.page.sessionpage.input_keyboard_input("打开文件管理")
+    #     # 对话页点击发送
+    #     self.page.sessionpage.click_send_button()
+    #     time.sleep(3)
+    #     # 断言
+    #     assert self.driver.current_activity == ".filemanager.FileManager"
 
 # 尚景
 #     音乐
@@ -2101,7 +2102,7 @@ class TestDomain:
         # 断言
         assert "随机" in self.page.sessionpage.get_text(self.page.sessionpage.tts_reply)
 
-    #   query：单曲循环
+    #   query：单曲循环 回复不唯一
     def test_music_08(self):
         time.sleep(3)
         # 首页点击键盘
@@ -2520,6 +2521,41 @@ class TestDomain:
         # assert "对话翻译" == ren_msg
         assert self.page.sessionpage.is_toast_exist('对话翻译')
 
+    # 聂露  新增
+        # 写过了
+        # 未登录QQ音乐，播放收藏的歌曲
+        # def test_collection_music(self):
+        #     time.sleep(3)
+        #     self.page.homepage.click_keyboard()
+        #     self.page.sessionpage.input_keyboard_input("播放收藏的歌曲")
+        #     self.page.sessionpage.click_send_button()
+        #     assert self.page.sessionpage.is_toast_exist("操作失败，请登录QQ音乐后再尝试")
+        #
+        # 已登录QQ音乐，播放收藏的歌曲
+        def test_collection_music01(self):
+            time.sleep(3)
+            self.page.homepage.click_keyboard()
+            self.page.sessionpage.input_keyboard_input("播放收藏的歌曲")
+            self.page.sessionpage.click_send_button()
+            self.page.sessionpage.click_big_card_play_button()
+            assert "QQ音乐" in self.page.sessionpage.get_text(self.page.sessionpage.small_card_icon)
 
+        # 无缓存清理缓存
+        def test_clear_cache01(self):
+            self.page.homepage.click_center_button()
+            self.page.centerpage.click_clear_cache()
+            assert self.page.centerpage.is_toast_exist("没有什么可清理的了")
+
+        # 有缓存清理缓存
+        def test_clear_cache02(self):
+            self.page.homepage.click_keyboard()
+            self.page.sessionpage.input_keyboard_input("打开对话翻译")
+            self.page.sessionpage.click_send_button()
+            time.sleep(3)
+            self.driver.find_element_by_xpath("//android.widget.ImageButton").click()
+            self.page.homepage.click_center_button()
+            self.page.centerpage.click_clear_cache()
+            self.page.centerpage.click_ok_button()
+            assert self.page.centerpage.is_toast_exist("清理完毕")
 
 

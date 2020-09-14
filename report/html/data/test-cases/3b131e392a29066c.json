@@ -1,0 +1,66 @@
+{
+  "uid" : "3b131e392a29066c",
+  "name" : "TestDomain.test_music_08",
+  "fullName" : "scripts.test1_domain.TestDomain.test_music_08",
+  "historyId" : "580396a37a72cd5376d135ff02f9733d",
+  "time" : {
+    "start" : 1599967786404,
+    "stop" : 1599967906638,
+    "duration" : 120234
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert '单曲循环' in '好呀，我也喜欢这首歌哦'\n +  where '好呀，我也喜欢这首歌哦' = <bound method BaseAction.get_text of <page.sessionpage.SessionPage object at 0x00FAFD90>>(('xpath', \"//*[@resource-id='com.xiaomi.xiaoailite:id/tv_toast_view']\"))\n +    where <bound method BaseAction.get_text of <page.sessionpage.SessionPage object at 0x00FAFD90>> = <page.sessionpage.SessionPage object at 0x00FAFD90>.get_text\n +      where <page.sessionpage.SessionPage object at 0x00FAFD90> = <page.page.Page object at 0x00FAF970>.sessionpage\n +        where <page.page.Page object at 0x00FAF970> = <scripts.test1_domain.TestDomain object at 0x00FAF830>.page\n +    and   ('xpath', \"//*[@resource-id='com.xiaomi.xiaoailite:id/tv_toast_view']\") = <page.sessionpage.SessionPage object at 0x00FAFC70>.tts_reply\n +      where <page.sessionpage.SessionPage object at 0x00FAFC70> = <page.page.Page object at 0x00FAF970>.sessionpage\n +        where <page.page.Page object at 0x00FAF970> = <scripts.test1_domain.TestDomain object at 0x00FAF830>.page",
+  "statusTrace" : "self = <scripts.test1_domain.TestDomain object at 0x00FAF830>\n\n>   ???\nE   assert '单曲循环' in '好呀，我也喜欢这首歌哦'\nE    +  where '好呀，我也喜欢这首歌哦' = <bound method BaseAction.get_text of <page.sessionpage.SessionPage object at 0x00FAFD90>>(('xpath', \"//*[@resource-id='com.xiaomi.xiaoailite:id/tv_toast_view']\"))\nE    +    where <bound method BaseAction.get_text of <page.sessionpage.SessionPage object at 0x00FAFD90>> = <page.sessionpage.SessionPage object at 0x00FAFD90>.get_text\nE    +      where <page.sessionpage.SessionPage object at 0x00FAFD90> = <page.page.Page object at 0x00FAF970>.sessionpage\nE    +        where <page.page.Page object at 0x00FAF970> = <scripts.test1_domain.TestDomain object at 0x00FAF830>.page\nE    +    and   ('xpath', \"//*[@resource-id='com.xiaomi.xiaoailite:id/tv_toast_view']\") = <page.sessionpage.SessionPage object at 0x00FAFC70>.tts_reply\nE    +      where <page.sessionpage.SessionPage object at 0x00FAFC70> = <page.page.Page object at 0x00FAF970>.sessionpage\nE    +        where <page.page.Page object at 0x00FAF970> = <scripts.test1_domain.TestDomain object at 0x00FAF830>.page\n\nscripts\\test1_domain.py:2114: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-IJRQON0"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "13864-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "scripts.test1_domain"
+  }, {
+    "name" : "testClass",
+    "value" : "scripts.test1_domain"
+  }, {
+    "name" : "testMethod",
+    "value" : "TestDomain.test_music_08"
+  }, {
+    "name" : "package",
+    "value" : "scripts.test1_domain"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "3b131e392a29066c.json",
+  "parameterValues" : [ ]
+}

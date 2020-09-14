@@ -1,0 +1,62 @@
+{
+  "uid" : "775df69be04cc455",
+  "name" : "TestDomain.test_ask_recipe_02",
+  "fullName" : "scripts.test1_domain.TestDomain.test_ask_recipe_02",
+  "historyId" : "b3d19bcb2b4a39dd2d5e9b317e939ef6",
+  "time" : {
+    "start" : 1599962763959,
+    "stop" : 1599962829311,
+    "duration" : 65352
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "statusMessage" : "TimeoutException: Message: \n",
+  "statusTrace" : "self = <scripts.test1_domain.TestDomain object at 0x043B3ED0>\n\n    def test_ask_recipe_02(self):\n    \n        # 首页点击键盘\n        self.page.homepage.click_keyboard()\n        # 对话页输入“做蛋挞需要注意什么”\n>       self.page.sessionpage.input_keyboard_input(\"做蛋挞需要注意什么\")\n\nscripts\\test1_domain.py:109: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npage\\sessionpage.py:42: in input_keyboard_input\n    self.input(self.keyboard_input,message)\nbase\\base_action.py:30: in input\n    self.find_element6(feature).send_keys(text)\nbase\\base_action.py:17: in find_element6\n    return WebDriverWait(self.driver, timeout, poll).until(lambda x:x.find_element(by, value))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"654fac51-7c07-4d6a-8bda-0a8cf6eac3a8\")>\nmethod = <function BaseAction.find_element6.<locals>.<lambda> at 0x04350ED0>, message = ''\n\n    def until(self, method, message=''):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n            return value is not False.\"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.time() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, 'screen', None)\n                stacktrace = getattr(exc, 'stacktrace', None)\n            time.sleep(self._poll)\n            if time.time() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\nd:\\python3\\lib\\site-packages\\selenium\\webdriver\\support\\wait.py:80: TimeoutException",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-IJRQON0"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "13864-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "scripts.test1_domain"
+  }, {
+    "name" : "testClass",
+    "value" : "scripts.test1_domain"
+  }, {
+    "name" : "testMethod",
+    "value" : "TestDomain.test_ask_recipe_02"
+  }, {
+    "name" : "package",
+    "value" : "scripts.test1_domain"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "775df69be04cc455.json",
+  "parameterValues" : [ ]
+}

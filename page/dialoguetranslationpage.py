@@ -1,3 +1,5 @@
+import time
+
 from selenium.common.exceptions import TimeoutException
 
 from base.base_action import BaseAction
@@ -36,7 +38,18 @@ class DialogueTranslationPage(BaseAction):
     empty_button = By.XPATH, '//*[@text="清空"]'
     #	543, 1189
 
+    # 更改结果按钮
+    src_text_edit = By.ID, "com.xiaomi.xiaoailite:id/src_text_edit"
 
+    # 更改结果输入框
+    et_input = By.ID, "com.xiaomi.xiaoailite:id/et_input"
+
+    # 确定按钮
+    btn_confirm = By.ID, "com.xiaomi.xiaoailite:id/btn_confirm"
+
+    # 取消按钮
+    btn_cance = By.ID, "com.xiaomi.xiaoailite:id/btn_cancel"
+    # com.xiaomi.xiaoailite:id/btn_cancel
 
     #点击中文翻译按钮
     def click_Chinesetranslation_button(self):
@@ -44,6 +57,10 @@ class DialogueTranslationPage(BaseAction):
     #点击英语的翻译按钮
     def click_Eenlishtranslation_button(self):
         self.click(self.Eenlishtranslation_button)
+
+    # 清空的确认按钮
+    ok_button = By.XPATH, '//*[@text="好的"]'
+
 #输入要翻译的内容
     def input_translation_box(self,text):
         self.input(self.TranslationcontentInput,text)
@@ -59,3 +76,27 @@ class DialogueTranslationPage(BaseAction):
 # 点击复制按钮
     def click_add_button(self):
         self.click(self.add_button)
+
+    # 点击更改结果按钮
+    def click_src_text_edit(self):
+        self.click(self.src_text_edit)
+
+    # 清空输入框内容
+    def clean_input(self):
+        self.clear_test(self.et_input)
+
+    # 输入内容
+    def input_et_text(self,text):
+        self.input(self.et_input, text)
+
+    # 点击确定
+    def click_btn_confirm(self):
+        self.click(self.btn_confirm)
+
+    # 点击取消
+    def click_btn_cance(self):
+        self.click(self.btn_cance)
+
+    # 点击清空的好的按钮
+    def click_ok_button(self):
+        self.click(self.ok_button)
